@@ -1,0 +1,37 @@
+table {
+	border-collapse: collapse;
+	width: 50%;
+	height: 100%;
+}
+
+td {
+	border-bottom: 1px solid #cccccc;
+	font-size: 20px;
+	padding: 10px;
+	font-family: Helvetica;
+}
+
+.hoverMouse {
+	color: transparent;
+}
+
+.hoverMouse:hover {
+	color: #cccccc
+}
+
+.tableHead {
+	background-color: #4d94ff;
+	color: #FFFFFF;
+}
+
+.mainTableColumns {
+	color: #cccccc;
+}
+
+.hoverScore:hover {
+	color: #4d94ff;
+}
+
+.hoverScore {
+	font-weight: bold;
+}
