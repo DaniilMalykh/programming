@@ -1,0 +1,17 @@
+input:hover, textarea:hover { 
+	border-color: blue;
+	color: green;
+ }
+
+ input:focus, textarea:focus {
+ 	border-color: red;
+ 	color: yellow;
+ }
+
+div {
+ 	text-align: center;
+ }
+
+ body {
+ 	background-color: #ccc;
+ }
