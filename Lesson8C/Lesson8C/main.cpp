@@ -76,7 +76,26 @@ int main(int argc, const char * argv[]) {
 //        yearsWithCredit++;
 //    }
 //    cout << yearsWithCredit << endl;
-    
-    return 0;
+    /*8 задание*/
+//    double E, x;
+//    double n = 1;
+//    cout << "Введите погрешность" << endl;
+//    cin>> E;
+//    do {
+//        x=pow((1+1/n), n);
+//        n+=1;
+//        }
+//    while (fabs(x - MATH_EXP) > E);
+//    cout << n - 1 << endl;
+    /*7 задание*/
+//    double x,E;
+//    cout << "Введите погрешность" << endl;
+//    cin>> E;
+//     for(x = 1; x < 100; x++) {
+//    if(((sin(1/x)) / 1/x) >= 1-E && ((sin(1/x)) / 1/x) <= 1 + E) {
+//    cout<< 1/x << endl;
+//        }
+//    }
+//    return 0;
 }
 
