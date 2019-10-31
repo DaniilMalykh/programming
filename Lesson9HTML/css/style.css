@@ -1,0 +1,22 @@
+.borderingHeader1 {
+	border-top, border-left, border-right: 1px solid black;
+}
+
+.borderingHeader2 {
+	border-left: 1px solid black;
+}
+
+.borderingHeader3 {
+	border-right: 1px solid black;
+
+}
+
+.borderingHeader4 {
+	border-bottom, border-left: 1px solid black;
+
+}
+
+.borderingHeader5 {
+	border-bottom, border-right: 1px solid black;
+
+}

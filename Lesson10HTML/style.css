@@ -1,0 +1,132 @@
+body {
+	font-family: Helvetica;
+	font-size: 17px;
+}
+
+ .tableInMain {
+	border-collapse: collapse;
+	border: 1px solid black;
+	padding: 10px;
+	text-align: center;
+}
+
+table {
+	width: 100%;
+	height:100%;
+}
+
+.header { 
+  padding: 10px 100px 100px 25px;
+  min-height: 200px;
+  background-image: url(fon.jpg);
+}
+
+.headerDiv {
+	width: 30%;
+	float: left;
+}
+
+.listingInMain {
+	font-style: italic;
+	font-weight: bold;
+}
+
+.columnBody {
+	float: left;
+	width: 50%;
+}
+
+.columnBodyLeft{
+	padding-left: 100px;
+	float: left;
+	width: 40%;
+}
+
+#markingTimeTable {
+	border-left: 1px solid red;
+	font-style: italic;
+	font-weight: bold;
+	width: 100%;
+	padding-left: 20px;
+}
+
+.individualTimeTable {
+	margin-top: 80px; 
+	width: 100%;
+}
+
+.tableHeader {
+	background-color: #ccc;
+}
+
+.footer {
+	background-color: #000;
+}
+
+.logo {
+	width:100px;
+	height: 101px;
+}
+
+#lastMain {
+	padding-bottom: 100px;
+}
+
+.tableInFooterLeft {
+	padding: 30px;
+	font-size: 18px;
+	background-color: #000;
+	color: #fff;
+}
+.tableInFooterRightHeader {
+	background-color: #000;
+	color: #fff;
+	padding: 32px;
+	font-size: 17px;
+	border-collapse: collapse;
+}
+
+.tableInFooterRight {
+	background-color: #000;
+	color: yellow;
+	padding: 44px;
+	font-size: 13px;
+	border-collapse: collapse;
+
+}
+
+#somethingStrangeWithCell {
+	padding: 29px;
+}
+
+#tables {
+	width: 100%;
+}
+
+#tableHeaderHyper {
+	color: #fff;
+	text-decoration: none;
+}
+
+#tableBodyHyper {
+	color: yellow;
+	text-decoration: none;
+}
+
+#tableHeaderHyper:hover {
+	text-decoration: underline;
+}
+
+#tableBodyHyper:hover {
+	text-decoration: underline;
+}
+
+#tableHeaderHyper:active {
+	text-decoration: underline;
+	color: #ccc;
+}
+
+#tableBodyHyper:active {
+	text-decoration: underline;
+	color: #ccc;
+}
