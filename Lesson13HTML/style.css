@@ -1,0 +1,15 @@
+.MotherFlex {
+	border: 0px solid black; 
+	box-sizing: border-box; 
+	display: flex;
+	flex-direction: row; 
+	align-content: flex-start; 
+	flex-shrink: 0; 
+	width: 1200px; 
+	margin: 0px auto 12px;
+}
+
+img {
+	width: auto;
+	height: 600px;
+}
