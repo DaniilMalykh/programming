@@ -8,6 +8,7 @@ body {
 	border: 1px solid black;
 	padding: 10px;
 	text-align: center;
+
 }
 
 table {
@@ -34,12 +35,14 @@ table {
 .columnBody {
 	float: left;
 	width: 50%;
+	display: table;
 }
 
 .columnBodyLeft{
 	padding-left: 100px;
 	float: left;
 	width: 40%;
+	display: table;
 }
 
 #markingTimeTable {
@@ -53,6 +56,7 @@ table {
 .individualTimeTable {
 	margin-top: 80px; 
 	width: 100%;
+	display: table;
 }
 
 .tableHeader {
@@ -92,7 +96,6 @@ table {
 	padding: 44px;
 	font-size: 13px;
 	border-collapse: collapse;
-
 }
 
 #somethingStrangeWithCell {
