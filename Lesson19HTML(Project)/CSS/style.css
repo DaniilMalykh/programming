@@ -1,0 +1,205 @@
+body {
+	font-size: 20px;
+	color: white;
+	font-family: Helvetica;
+	background-image: url("../IMG/back.jpg");
+	background-size: cover;
+}
+.bodyGrid {
+	display: grid;
+	grid-template-columns: 20% 80%;
+  	grid-template-rows:950px;
+}
+/*Главный класс отвечащий за грид-расскладку*/
+.menuColumnGrid {
+	grid-column-start: 1;
+	display: grid;
+	grid-template-columns:400px;
+	grid-template-rows:100px;
+}
+
+/*Тут у нас располагаются кнопки*/
+.navigation {
+	display: grid;
+  	grid-template-columns: 400px;
+  	grid-template-rows:75px 75px;
+}
+
+/*Кнопка на Биографию*/
+.navigationBio {
+	grid-column-start: 1;
+	grid-row-start: 1;
+	background-color: #ff8080;
+	border-left: 2px solid white;
+	border-right: 2px solid white;
+	border-top: 2px solid white;
+}
+.navigationBio:hover {
+	grid-column-start: 1;
+	grid-row-start: 1;
+	background-color: #ff8080;
+	box-shadow: 0 0 10px black;
+}
+
+
+/*Кнопка на Контакты*/
+.navigationContacts {
+	grid-column-start: 1;
+	grid-row-start: 2;
+	background-color: #ff8080;
+	border-left: 2px solid white;
+	border-right: 2px solid white;
+	border-bottom: 2px solid white;
+}
+.navigationContacts:hover {
+	grid-column-start: 1;
+	grid-row-start: 2;
+	background-color: #ff8080;
+	box-shadow: 0 0 10px black;
+}
+
+/*Текст внутри кнопок*/
+.navigationButton {
+	text-align: center;
+}
+
+/*Внешний вид ссылок*/
+a {
+	text-decoration: none;
+	font-size: 20px;
+	color: white;
+	font-family: Helvetica;
+}
+a:active {
+	text-decoration: none;
+	font-size: 20px;
+	color: white;
+	font-family: Helvetica;
+}
+
+a:hover {
+	text-decoration: underline;
+	font-size: 20px;
+	color: white;
+	font-family: Helvetica;
+}
+
+/*Работаем с фотографиями*/
+img {
+	width: 145%;
+	border:2px solid white;
+}
+
+.mainColumnGrid {
+	margin-left: 120px;
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows:400px 250px;
+}
+/*Блок с профилем, именем и фотографией*/
+.profileBlock {
+	display: grid;
+  	grid-template-columns: 700px;
+  	grid-template-rows:250px 150px;
+  	background-color: #ff4d4d;
+
+}
+
+/*Профиль с двумя кнопками на записи и фотографии*/
+.profileHeader {
+	grid-column-start: 1;
+	display: grid;
+  	grid-template-rows:100px 50px;
+}
+/*Профиль с двумя кнопками на записи и фотографии*/
+.profileFooter {
+	grid-column-start: 1;
+	display: grid;
+  	grid-template-columns: 72.8% 72.8%;
+  	grid-template-rows:100px 50px;
+}
+
+/*Позиционируем фотку профиля*/
+.profilePicture{
+	position: relative;
+	bottom: 135px;
+	left:20px;
+}
+
+/*Работаем с фотографией*/
+.profilePic {
+	width: 150px;
+	height: 150px;
+	border-radius: 100px;
+	
+}
+.profilePic:hover  {
+	box-shadow: 0 0 10px black;
+
+}
+
+/*Кнопка на Записи*/
+.profileNotes {
+	grid-column-start: 1;
+	background-color: #ff8080;
+	border-right: 2px solid white;
+	box-shadow: 0 0 10px black;
+}
+.profileNotes:hover {
+	grid-column-start: 1;
+	background-color: #ff8080;
+	border-right: 2px solid white;
+	box-shadow: 0 0 10px black;
+}
+
+
+/*Кнопка на Фотографии*/
+.profilePhotos {
+	grid-column-start: 2;
+	background-color: #ff8080;
+}
+.profilePhotos:hover {
+	background-color: #ff8080;
+	box-shadow: 0 0 10px black;
+}
+
+/*Создаем блок записей*/
+.noteBlock {
+	margin-top: 10px;
+	grid-column-start: 1;
+	background-color: #ff4d4d;
+	display: grid;
+  	grid-template-columns: 200px 800px;
+  	grid-template-rows:150px 100px;
+  	border: 2px solid white;
+}
+
+/*Аватарка в блоке записей*/
+.profilePicInNotes {
+	position: relative;
+	left: 20px;
+	top: 20px;
+	width: 100px;
+	height: 100px;
+	border-radius: 100px;
+	grid-column-start: 1;
+	grid-row-start: 1;
+}
+
+/*Имя в блоке записей*/
+.profileNameInNotes {
+	position: relative;
+	left: -60px;
+}
+
+/*Регйлирую блок записей*/
+.informationInNotes {
+	grid-column-start: 2;
+	grid-row-start: 2;
+}
+
+/*Записи*/
+.notes {
+	position: relative;
+	bottom: 100px;
+}
