@@ -6,14 +6,64 @@
 //  Copyright © 2019 Felix Freidman. All rights reserved.
 //
 
+
 #include <iostream>
+#include <cmath>
+#include <ctime>
+
 using namespace std;
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    //задание 1
+int main (){
+int l;
+double sum;
+const int N = 20;
+double Z[N];
     srand(time(NULL));
-    rand();
+        rand();
+int d;
+int b = 100, e = 200;
+for (int i = 0; i < N; i++) {
+Z[i] = rand() % 10;
+    cout << Z[i] << " ";
+}
+cout << endl;
+cout <<"введите число l" << endl;
+cin>>l;
+for (int i = 0; i <= l; i++) {
+sum=sum+Z[i];
+}
+sum=sum/l;
+    cout << sum << endl;
+    
+    for(int i = 0; i < N; i++){
+        Z[i] = sum;
+        cout << Z[i] << " ";
+    }
+return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//#include <iostream>
+//using namespace std;
+//
+//int main(int argc, const char * argv[]) {
+//    // insert code here...
+//    //задание 1
+//    srand(time(NULL));
+//    rand();
 //    int array[30] = {0};
 //    for (int i = 0; i < 30; i++) {
 //        array[i] = rand() % 100;
@@ -25,16 +75,16 @@ int main(int argc, const char * argv[]) {
 //    int maxCounter;
 //    for(int i = 0; i < 29; i++) {
 //        if(array[i+1] > array[i]){
-//        counter++;
-//        counterArray[i] = counter;
-//        cout << counterArray[i] << " ";
-//            }
-//        if(array[i+1] < array[i]){
-//        counter = 0;
-//        counterArray[i] = counter;
-//        cout << counterArray[i] << " ";
-//            }
+//            counter++;
+//            counterArray[i] = counter;
+//            cout << counterArray[i] << " ";
 //        }
+//        else{
+//            counter = 0;
+//            counterArray[i] = counter;
+//            cout << counterArray[i] << " ";
+//        }
+//    }
 //    for(int i = 0; i < 29; i++) {
 //        if (counterArray[i+1] > counterArray[i]) {
 //            maxCounter = counterArray[i + 1];
@@ -124,4 +174,4 @@ int main(int argc, const char * argv[]) {
 //        return 0;
 //    } else
 //        return 0;
-}
+
