@@ -3,11 +3,10 @@
 <head>
 	<title>Twitter 2.0</title>
 	<link rel="stylesheet" type="text/css" href="../CSS/style.css">
+	<meta charset="utf-8">
 </head>
 <body>
-      <!-- Я создал страницу, которая поделена на 2 смысловые части, панель навигации в левой части, основной контент
-      в правой части, самый главный Grid - body, он поделен на menuColumn и mainColumn, по ходу кода не должны возникнуть вопросы, удачи в нем в разобраться, постарался, как можно читабельнее все сделать! -->
-      <div class = "bodyGrid">
+    <div class = "bodyGrid">
             <div class = "menuColumnGrid">
                   <div class = "headerBlock">
                          <div class = "navigation">
@@ -23,7 +22,6 @@
                   </div>
                   </div>
             <div class = "mainColumnGrid">
-
                   <div class = "profileBlock">
 
                         <div class = "profileHeader">
@@ -38,30 +36,58 @@
                               
                               <div class = "profileNotes">
                               <a href ="index.html">
-                                    <span><p class = "navigationButton">Записи</p></span></a>
+                                    <span><p class = "ActivenavigationButton">Записи</p></span></a>
                               </div>
                               <div class = "profilePhotos">
                                     <a href = "indexPhotos.html">
-                                    <span><p class = "navigationButton">Фотографии</p></span></a>
+                                    <span><p class = "InActivenavigationButton">Фотографии</p></span></a>
                               </div> 
                         </div>
                   </div>
-
                   <div class = "noteBlock">
                         <img src = "../IMG/Felix.jpg" class = "profilePicInNotes">
-                        <span><p class = "profileNameInNotes">Felix Freidman<a href = "https://vk.com"> @felixfreidman</a></p></span>
+                        <span><p class = "profileNameInNotes"><strong>Felix Freidman</strong><a href = "https://vk.com"> @felixfreidman</a></p></span>
                         <div class = "informationInNotes">
                          <span><p class = "notes">Привет мир, или это история о том, как миллениалы изобрели твиттер</p></span>
                         </div>       
                   </div>
                   <div class = "noteBlock">
                         <img src = "../IMG/Felix.jpg" class = "profilePicInNotes">
-                        <span><p class = "profileNameInNotes">Felix Freidman<a href = "https://vk.com"> @felixfreidman</a></p></span>
+                        <span><p class = "profileNameInNotes"><strong>Felix Freidman</strong><a href = "https://vk.com"> @felixfreidman</a></p></span>
                         <div class = "informationInNotes">
                          <span><p class = "notes">Просто добавляю еще один твит, не трудно же</p></span>
                         </div>       
+                  </div></div>
+          	<div class = "SideBarColumnGrid">
+                  <div class = "headerBlock">
+                         <div class = "hashtagsSideBar">
+                              <div class = "navigationBio">
+                                    <a href = "index.html">
+                                    <span><h4 class = "trendSideBar">Trends for you</h4></span></a>
+                                    <div class = "hashtagDecor">
+                                    <a href = "index.html">
+                                    <span><p class = "hashtag">#colorOf2020</p></span></a>
+                              </div>         
+                              <div class = "hashtagDecor">
+                                    <a href = "indexContacts.html">
+                                    <span><p class = "hashtag">#YouTubeRewind2019</p></span></a>
+                              </div>
+                              <div class = "hashtagDecor">
+                                    <a href = "indexContacts.html">
+                                    <span><p class = "hashtag">#DDD</p></span></a>
+                              </div>
+                              <div class = "hashtagDecor">
+                                    <a href = "indexContacts.html">
+                                    <span><p class = "hashtag">#Exams2019</p></span></a>
+                              </div>
+                              <div class = "hashtagDecor">
+                                    <a href = "indexContacts.html">
+                                    <span><p class = "hashtag">#StarWars</p></span></a>
+                              </div>
+                              </div>
+                         </div>
                   </div>
-          </div>
+                  </div>
     </div>
 </body>
 </html>

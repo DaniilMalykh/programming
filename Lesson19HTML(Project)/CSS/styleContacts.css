@@ -1,107 +1,120 @@
 body {
 	font-size: 20px;
-	color: white;
+	color: black;
 	font-family: Helvetica;
-	background-image: url("../IMG/back.jpg");
-	background-size: cover;
+	font-weight: bold;
+	background-color: #e6e6ff;
 }
 .bodyGrid {
 	display: grid;
-	grid-template-columns: 20% 80%;
-  	grid-template-rows:950px;
+	grid-template-columns: 200px auto auto;
+  	grid-template-rows:700px;
 }
 /*Главный класс отвечащий за грид-расскладку*/
 .menuColumnGrid {
 	grid-column-start: 1;
 	display: grid;
-	grid-template-columns:400px;
+	grid-template-columns:210px;
 	grid-template-rows:100px;
 }
 
 /*Тут у нас располагаются кнопки*/
 .navigation {
 	display: grid;
-  	grid-template-columns: 400px;
+  	grid-template-columns: 210px;
   	grid-template-rows:75px 75px;
 }
 
 /*Кнопка на Биографию*/
 .navigationBio {
+	padding: 10px;
 	grid-column-start: 1;
 	grid-row-start: 1;
-	background-color: #ff8080;
-	border-left: 2px solid white;
-	border-right: 2px solid white;
-	border-top: 2px solid white;
+	border-left: 2px solid blue;
+	border-right: 2px solid blue;
+	border-top: 2px solid blue;
+	border-bottom: 2px solid blue;
 }
 .navigationBio:hover {
 	grid-column-start: 1;
 	grid-row-start: 1;
-	background-color: #ff8080;
 	box-shadow: 0 0 10px black;
+	background-color: #e3f1fc;
 }
 
 
 /*Кнопка на Контакты*/
 .navigationContacts {
+	padding: 10px;
 	grid-column-start: 1;
 	grid-row-start: 2;
-	background-color: #ff8080;
-	border-left: 2px solid white;
-	border-right: 2px solid white;
-	border-bottom: 2px solid white;
+	border-left: 2px solid blue;
+	border-right: 2px solid blue;
+	border-bottom: 2px solid blue;
 }
 .navigationContacts:hover {
 	grid-column-start: 1;
 	grid-row-start: 2;
-	background-color: #ff8080;
 	box-shadow: 0 0 10px black;
+	background-color: #e3f1fc;
+}
+
+
+/*Текст внутри кнопок*/
+.ActivenavigationButton {
+	text-align: center;
+}
+.ActivenavigationButton:hover {
+	text-align: center;
 }
 
 /*Текст внутри кнопок*/
-.navigationButton {
+.InActivenavigationButton {
 	text-align: center;
+}
+.InActivenavigationButton:hover {
+	text-align: center;
+	color:#2bc4ff;
 }
 
 /*Внешний вид ссылок*/
 a {
 	text-decoration: none;
 	font-size: 20px;
-	color: white;
+	color: #777;
 	font-family: Helvetica;
 }
 a:active {
 	text-decoration: none;
 	font-size: 20px;
-	color: white;
+	color: #2bc4ff;
 	font-family: Helvetica;
 }
 
 a:hover {
-	text-decoration: underline;
 	font-size: 20px;
-	color: white;
+	color: #2bc4ff;
 	font-family: Helvetica;
 }
 
 /*Работаем с фотографиями*/
 img {
-	width: 145%;
-	border:2px solid white;
+	width: 99.5%;
 }
 
 .mainColumnGrid {
-	margin-left: 120px;
+	grid-column-start: 2;
 	display: grid;
-	grid-template-columns: auto;
-	grid-template-rows:400px 250px;
+	grid-template-columns: 830px;
+	grid-template-rows:350px;
+	margin-right: 20px;
+	margin-left: 20px;
 }
 /*Блок с профилем, именем и фотографией*/
 .profileBlock {
 	display: grid;
-  	grid-template-columns: 700px;
-  	grid-template-rows:250px 150px;
-  	background-color: #ff4d4d;
+  	grid-template-columns: 830px;
+  	grid-template-rows:200px 100px;
 
 }
 
@@ -109,13 +122,13 @@ img {
 .profileHeader {
 	grid-column-start: 1;
 	display: grid;
-  	grid-template-rows:100px 50px;
+  	grid-template-rows:50px 50px;
 }
 /*Профиль с двумя кнопками на записи и фотографии*/
 .profileFooter {
 	grid-column-start: 1;
 	display: grid;
-  	grid-template-columns: 72.8% 72.8%;
+  	grid-template-columns: 415px 415px;
   	grid-template-rows:100px 50px;
 }
 
@@ -135,43 +148,51 @@ img {
 }
 .profilePic:hover  {
 	box-shadow: 0 0 10px black;
-
 }
 
 /*Кнопка на Записи*/
 .profileNotes {
 	grid-column-start: 1;
-	background-color: #ff8080;
-	border-right: 2px solid white;
+	border-bottom: 2px solid blue;
 	box-shadow: 0 0 10px black;
 }
 .profileNotes:hover {
 	grid-column-start: 1;
-	background-color: #ff8080;
-	border-right: 2px solid white;
+	border-bottom: 2px solid blue;
 	box-shadow: 0 0 10px black;
+	background-color: #e3f1fc;
 }
 
 
 /*Кнопка на Фотографии*/
 .profilePhotos {
 	grid-column-start: 2;
-	background-color: #ff8080;
 }
 .profilePhotos:hover {
-	background-color: #ff8080;
 	box-shadow: 0 0 10px black;
+	background-color: #e3f1fc;
 }
 
 /*Создаем блок записей*/
 .noteBlock {
 	margin-top: 10px;
 	grid-column-start: 1;
-	background-color: #ff4d4d;
 	display: grid;
-  	grid-template-columns: 200px 800px;
+  	grid-template-columns: 200px 650px;
   	grid-template-rows:150px 100px;
-  	border: 2px solid white;
+  	border: 2px solid blue;
+  	font-size: 15px;
+  	font-weight: normal;
+}
+
+.noteBlock:hover {
+	margin-top: 10px;
+	grid-column-start: 1;
+	display: grid;
+  	grid-template-columns: 200px 650px;
+  	grid-template-rows:150px 100px;
+  	border: 2px solid blue;
+  	background-color: #e6ffff;
 }
 
 /*Аватарка в блоке записей*/
@@ -204,6 +225,37 @@ img {
 	bottom: 100px;
 }
 
+.SideBarColumnGrid {
+	grid-column-start: 3;
+	display: grid;
+	grid-template-columns:350px;
+	grid-template-rows:100px;
+}
+
+.hashtagsSideBar {
+	display: grid;
+  	grid-template-columns: 355px;
+  	grid-template-rows:550px;
+  	
+}
+.trendSideBar {
+	text-align: center;
+	border-bottom: 2px solid blue;
+	padding: 10px;
+}
+
+.hashtag {
+	grid-column-start: 1;
+	grid-row-start: 1;
+}
+
+.hashtagDecor {
+	padding: 10px;
+	grid-column-start: 1;
+	grid-row-start: 2;
+	border-bottom: 2px solid blue;
+}
+
 
 
 nav ul {
@@ -223,12 +275,12 @@ nav a {
 	.topmenu > li > a {
 	  height: 70px;
 	  line-height: 70px;
-	  padding: 0 30px;
+	  padding: 10px;
 	  text-transform: uppercase;
 }
-.topmenu li a:hover { color: black; }
+.topmenu li a:hover { color: #2bc4ff; }
 .submenu {
- 	background: white;
+ 	background-color: #e6ffff;
 	border: 2px solid #003559;
 	position: absolute;
 	left: 0;
@@ -240,7 +292,7 @@ nav a {
   opacity: 1;
 }
 .submenu li a {
-	color:#ff8080;
+	color: #2bc4ff;
   font-size: 13px;
   line-height: 36px;
   padding: 0 25px;
